@@ -1,0 +1,37 @@
+ul li {
+  list-style-type: georgian;
+}
+.header img{
+  height: 20px;
+  width: 20px;
+}
+ .content img{
+  height: 300px;
+  width: 400px;
+} 
+.app-wrapper{
+  margin: 0 auto;
+  display: grid; /*все внутренности будут вести себя как грид элементы  */
+  width: 1200px;
+
+  grid-template-areas:  /*area шаблон */
+  "h h"  /*первая строка - займём её всю header*/
+  "n c"; /* вторая строка - первая колонка(nav),вторая колонка(content) */
+
+  grid-template-rows: 60px 1fr; /*будет 2 строки(1fr) и место под неё(60px)*/
+  grid-template-columns: 2fr 10fr;/*2 колонки и место*/
+  /* grid-gap: 10px; */
+}
+.header{
+  grid-area: h;
+  background-color: orchid;
+
+}
+.nav{
+  grid-area: n;
+  background-color: #833281;  
+}
+.content{
+  grid-area: c;
+  background-color: burlywood;
+}
