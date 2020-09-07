@@ -15,6 +15,7 @@ const App = () => {
         <div><a href = "https://vk.com/lelush_lamperuzh">news</a></div>
         <div><a href = "https://vk.com/lelush_lamperuzh">music</a></div>
         <div><a href = "https://vk.com/lelush_lamperuzh">setings</a></div>
+        <div><a href = "https://vk.com/lelush_lamperuzh">setings</a></div>
 
       </nav>
       <div className = 'content'>
